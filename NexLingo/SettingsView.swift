@@ -48,7 +48,7 @@ struct SettingsView: View {
                         }
                     }
                     
-                    Link(destination: URL(string: "https://ivan-stock.github.io/NexLingo/privacy.html")!) {
+                    Link(destination: URL(string: "https://ivan-stock.github.io/NexLingo/guide.html")!) {
                         HStack {
                             Text("使用说明")
                                 .foregroundColor(.primary)
