@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexLingo User Guide - API Configuration</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-color: #333333;
+            --bg-color: #FAFAFA;
+            --card-bg: #FFFFFF;
+            --border-color: #E5E5EA;
+            --secondary-text: #8E8E93;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: var(--secondary-text);
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        .step-num {
+            display: inline-block;
+            background-color: rgba(0, 122, 255, 0.1);
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 14px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-link:hover {
+            background-color: #0062CC;
+        }
+
+        .screenshot-container {
+            background-color: #F2F2F7;
+            border-radius: 12px;
+            padding: 12px;
+            text-align: center;
+            margin-top: 16px;
+            border: 1px solid var(--border-color);
+        }
+
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .note-box {
+            background-color: #F2F2F7;
+            border-left: 4px solid var(--primary-color);
+            padding: 16px;
+            border-radius: 0 12px 12px 0;
+            font-size: 14px;
+            margin-top: 16px;
+        }
+
+        .security-note {
+            background-color: #E5F1FF;
+            border-left: 4px solid #34C759;
+            padding: 16px;
+            border-radius: 0 12px 12px 0;
+            font-size: 14px;
+            margin-top: 16px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+            color: var(--secondary-text);
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>NexLingo User Guide</h1>
+            <p class="subtitle">How to obtain and configure your personal OpenAI API Key for secure, private, and ultra-low-cost translation.</p>
+        </header>
+
+        <div class="card">
+            <span class="step-num">Step 1</span>
+            <h2>Log in to the OpenAI Developer Platform</h2>
+            <p>Please open your web browser and navigate to the official OpenAI developer platform:</p>
+            <a href="https://auth.openai.com/log-in" target="_blank" class="btn-link">Visit OpenAI Platform ↗</a>
+            <p>If you do not have an account yet, click "Sign up" to register, or simply use your Google or Apple account for a quick, authorized login.</p>
+            
+            <div class="screenshot-container">
+                <img src="images/step1_login.png" alt="OpenAI Login Screen" class="screenshot">
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="step-num">Step 2</span>
+            <h2>Create Your Exclusive API Key</h2>
+            <p>Once you successfully log in, you will be directed to your API dashboard console:</p>
+            <ol>
+                <li>Locate and click the black <strong>[Create API key]</strong> button near the center or top-right of the dashboard.</li>
+                <li>In the pop-up window, give your key a recognizable name (e.g., enter <code>NexLingo</code> in the "Name" field) so you know where it is being used.</li>
+                <li>Click the <strong>[Create secret key]</strong> button at the bottom right.</li>
+            </ol>
+            
+            <div class="screenshot-container" style="margin-bottom: 12px;">
+                <img src="images/step2_dashboard.png" alt="OpenAI Dashboard" class="screenshot">
+            </div>
+            <div class="screenshot-container">
+                <img src="images/step3_name_key.png" alt="Name Secret Key Window" class="screenshot">
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="step-num">Step 3</span>
+            <h2>Copy and Save to the NexLingo App</h2>
+            <p>After creating the key, a long string of unique characters starting with <code>sk-...</code> will appear on your screen. This is your API Key.</p>
+            <ol>
+                <li>Click the green <strong>[Copy]</strong> button next to it to copy it directly to your clipboard. <em>(Note: For security reasons, this secret key is only displayed once. Please copy it immediately!)</em></li>
+                <li>Open your <strong>NexLingo App</strong> on your iPhone and tap the gear icon to open the <strong>Settings</strong> page.</li>
+                <li>Paste the copied API Key into the input field under "API Settings", and tap <strong>[Save & Apply]</strong>.</li>
+            </ol>
+            
+            <div class="security-note">
+                <strong>🔒 Security & Privacy Commitment:</strong> Your API Key is fully encrypted and stored locally using Apple's highest hardware security standard, the <code>Keychain</code>. It is completely isolated and will <strong>NEVER</strong> be uploaded to any third-party or developer servers.
+            </div>
+
+            <div class="screenshot-container">
+                <img src="images/step5_save_app.png" alt="NexLingo App Settings Screen" class="screenshot">
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="step-num">Step 4</span>
+            <h2>Ensure Your OpenAI Account Has a Balance</h2>
+            <p>NexLingo utilizes OpenAI's official model API, which operates on a strictly transparent "pay-as-you-go" basis. To ensure your translations process successfully, make sure your OpenAI account is funded:</p>
+            
+            <div class="model-box">
+                <strong>⚡ Powered by GPT-4o-mini:</strong> NexLingo integrates OpenAI's cutting-edge <code>gpt-4o-mini</code> model. This state-of-the-art engine is blazing fast, highly intelligent at grasping context/emotions, and most importantly, <strong>unbelievably affordable</strong> (saving over 60% in costs compared to older legacy models like GPT-3.5).
+            </div>
+            <ul>
+                <li>We recommend an initial minimal top-up of <strong>$5.00</strong> or <strong>$10.00</strong> in your OpenAI billing dashboard.</li>
+                <li><strong>Unbelievably Low Cost:</strong> Because NexLingo calls OpenAI's highly optimized, ultra-efficient language models, the translation cost per sentence is negligible. For regular daily communication, a <strong>$10.00 balance is typically more than enough to last you an entire year!</strong></li>
+            </ul>
+            <div class="screenshot-container">
+                <img src="images/step5_save_app.png" alt="NexLingo App Settings Screen" class="screenshot">
+            </div>
+            <div class="note-box">
+                💡 <strong>Tip:</strong> You can set up "Usage limits" in your OpenAI account settings to prevent any unexpected usage or spending.
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 NexLingo. All rights reserved. Built with absolute privacy in mind.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
